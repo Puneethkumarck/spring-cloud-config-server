@@ -6,11 +6,21 @@ spring:
     config:
       server:
         encrypt:
-          enabled: false
+
         git:
           uri: https://github.com/Puneethkumarck/spring-cloud-config-test.git # default
           search-paths:
             - 'station*'
+          repos:
+              local:
+                 pattern: '*/local'
+                 uri: https://github.com/Puneethkumarck/spring-cloud-config-test.git # alt
+                 search-paths:
+                  - 'station*'
 
-  profile:
-    active: dev
+security:
+  basic:
+    enabled: true
+  user:
+    name: work@home
+    password: work@home

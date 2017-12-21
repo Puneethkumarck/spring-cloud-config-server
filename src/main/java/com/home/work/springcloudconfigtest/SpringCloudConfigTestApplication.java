@@ -1,5 +1,4 @@
 package com.home.work.springcloudconfigtest;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
@@ -11,3 +10,4 @@ public class SpringCloudConfigTestApplication {
 		SpringApplication.run(SpringCloudConfigTestApplication.class, args);
 	}
 }
+
